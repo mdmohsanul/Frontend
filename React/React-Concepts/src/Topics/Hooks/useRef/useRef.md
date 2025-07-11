@@ -1,0 +1,2 @@
+# What is ref?
+In React, a ref is an object that allows you to access and manipulate a particular instance of a component or DOM element. It provides a way to reference and interact with elements outside the typical React data flow, such as accessing the underlying DOM node or invoking methods on a child component.

@@ -1,0 +1,25 @@
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.container{
+    margin: auto;
+    max-width: 400px;
+    border: 1px solid black;
+    padding: 20px;
+    margin-top: 30px;
+    height: 300px;
+}
+.btn{
+    padding: 8px 15px;
+    background: #9c8d8d;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+.dark{
+    background-color: black;
+    color: white;
+}

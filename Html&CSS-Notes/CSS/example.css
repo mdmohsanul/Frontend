@@ -1,0 +1,72 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit; }
+
+
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+  /* (1rem == 10px) */
+}
+
+ /* ---------------- Pseudo classes selector ----------------------------- */
+
+ /* unvisited link */
+ a:link {
+    color: #FF0000;
+  }
+  
+  /* visited link */
+  a:visited {
+    color: #00FF00;
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: #FF00FF;
+  }
+  
+  /* selected link */
+  a:active {
+    color: #0000FF;
+  }
+
+ /* ---------------- Pseudo element selector ----------------------------- */
+
+
+  h1::before {
+    content: url(smiley.gif);
+  }
+
+  h1::after {
+    content: url(smiley.gif);
+  }
+
+  /* ---------------------- Media Queries -------------------------- */
+
+  /* mobile first */
+  body{
+    background-color: yellow;
+  }
+  @media (min-width:600px) {
+    body{
+      /* it means above 600px it turns into green */
+      background-color: green; 
+
+    }
+  }
+
+  /* desktop first */
+  body{
+    background-color: red;
+  }
+  @media (max-width:600px) {
+    body{
+      /* it means below 600px it turns into white */
+      background-color: white; 
+
+    }
+  }

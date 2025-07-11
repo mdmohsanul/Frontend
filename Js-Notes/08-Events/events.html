@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div
+      id="grandparent"
+      style="height: 200px; width: 400px; background-color: brown"
+    >
+      <div
+        id="parent"
+        style="height: 100px; width: 200px; background-color: rgb(71, 45, 45)"
+      >
+        <button id="handleClick">Click Me</button>
+      </div>
+    </div>
+    <div id="showName"></div>
+
+    <div id="categories">
+      <h1>Event Delegation</h1>
+      <li id="laptops">Laptops</li>
+      <li id="desktop">Desktop</li>
+      <li id="monitor">Monitor</li>
+      <li id="moblie">Moblie</li>
+    </div>
+
+    <form id="form">
+      <input type="text" id="name" data-uppercase />
+      <input type="text" id="location" data-uppercase />
+      <input type="text" id="city" data-uppercase />
+    </form>
+    <script src="./events.js"></script>
+  </body>
+</html>

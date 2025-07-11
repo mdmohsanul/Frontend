@@ -1,0 +1,23 @@
+:root{
+    --primary-color :purple
+}
+
+
+#header a:hover{
+    color: brown;
+    font-weight: 34px;
+}
+
+#submitBtn{
+    background-color: var(--primary-color);
+    text-decoration: none;
+    border-radius: 0.5rem;
+    padding: 10px 15px;
+    color: wheat;
+}
+@media (min-width:600px) {
+    body{
+
+        background-color: yellow;
+    }
+}

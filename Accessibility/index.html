@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      <!-- It is must to have same word in for attribute and id attribute for the screen readers -->
+      <label for="name"></label>
+      <input type="text" name="" id="name" />
+
+      <input type="text" name="" aria-label="name" />
+
+      <div id="container">Text</div>
+      <input type="text" name="" aria-labelledby="container" />
+
+      <!-- when using an image always use alt -->
+      <img src="" alt="describe the image" />
+    </div>
+
+    <!-- Keyboard accessibility -->
+
+    <div>
+      <button>One</button>
+      <button>Two</button>
+      <button>Three</button>
+    </div>
+  </body>
+</html>
