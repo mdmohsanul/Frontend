@@ -1,3 +1,8 @@
+# props or properties are object that we pass from one component to another component typically from parent to child.
+- props are immutable.
+- helps to make component reusable and dynamic
+
+
 # passing a string
 
 <ComponentName name='alice'>

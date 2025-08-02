@@ -30,10 +30,10 @@
 
 A promise is an object respresenting the eventual completion(or failure) of an asynchronous operations and its resulting value. Promises provided a cleaner way to handle asynchronous operations as compared to callbacks.
 
-whenever we execute promise it returns an object which has to properties
+whenever we execute promise it returns an object which has two properties
 Promise:{
-state:"pending", -> State tells us in which state our promise is
-result:undefined -> Result will store whatever data promise returned
+PromiseState:"pending", -> State tells us in which state our promise is
+PromiseResult:undefined -> Result will store whatever data promise returned
 }
 Promises have three states:
 

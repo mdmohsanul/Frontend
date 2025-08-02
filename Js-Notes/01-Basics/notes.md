@@ -43,6 +43,7 @@ Primitives are stored directly in the stack memory, meaning when you copy a prim
 # What Are Reference Types?
 
 Reference types are mutable (can be changed) and stored by reference in the heap memory.
+When you copy a non-primitive value in JavaScript, you're copying the reference, not the actual value. To avoid unintended side effects, use shallow or deep copy techniques depending on your need.
 Reference types have methods
 
 object -> typeof object is object

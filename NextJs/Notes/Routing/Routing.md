@@ -1,6 +1,7 @@
 # Routing
 
-- It supports file based routing system
+- It supports file based routing system.
+- URLs you can access in your browser are determined by how you organize your files and folders in your code.
 
 # Routing Conventions
 

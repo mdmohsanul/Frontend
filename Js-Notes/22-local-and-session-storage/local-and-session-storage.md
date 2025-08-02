@@ -60,3 +60,29 @@ eg: if we set for origin http://akshaysaini.in
 
 - CASE 4:
   http://blog:akshaysaini.in:8080 -> No, the PORT is changed
+
+
+
+
+🧠 “𝐖𝐡𝐲 𝐝𝐢𝐝 𝐦𝐲 𝐝𝐚𝐭𝐚 𝐝𝐢𝐬𝐚𝐩𝐩𝐞𝐚𝐫 𝐚𝐟𝐭𝐞𝐫 𝐈 𝐜𝐥𝐨𝐬𝐞𝐝 𝐭𝐡𝐞 𝐭𝐚𝐛?”
+If you’ve hit that surprise in dev mode, chances are…
+ 👉 you used 𝐒𝐞𝐬𝐬𝐢𝐨𝐧 𝐒𝐭𝐨𝐫𝐚𝐠𝐞 — and it did exactly what it’s built for.
+But that’s a good thing.
+ Here’s when to use 𝐒𝐞𝐬𝐬𝐢𝐨𝐧 𝐒𝐭𝐨𝐫𝐚𝐠𝐞 like a pro:
+🧩 𝐒𝐞𝐬𝐬𝐢𝐨𝐧 𝐒𝐭𝐨𝐫𝐚𝐠𝐞 𝐢𝐬 𝐩𝐞𝐫𝐟𝐞𝐜𝐭 𝐟𝐨𝐫:
+Multi-step form navigation (retain data only during the session)
+Temporary user actions or selections
+One-time tokens or page-specific flags
+Preventing data leakage across tabs
+Avoiding stale data after user leaves a tab
+🔐 𝐖𝐡𝐲 𝐝𝐞𝐯𝐬 𝐥𝐨𝐯𝐞 𝐢𝐭:
+ ✅ Clears itself (no manual cleanup needed)
+ ✅ Scoped to a single tab — no sharing across windows
+ ✅ Great for single-session UX enhancements
+❌ Not meant for:
+Long-term storage
+Cross-tab or persistent preferences
+Sensitive info (still accessible via JS)
+🚀 Pro Tip:
+When the user experience should reset after they close the tab — Session Storage is your best friend.
+👇 Have you ever misused sessionStorage and learned the hard way?

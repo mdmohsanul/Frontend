@@ -1,6 +1,6 @@
 import { keepPreviousData, useMutation, useQuery } from "@tanstack/react-query";
 import React, { useState } from "react";
-import { fetchPosts } from "../API/api";
+import { deleteHandler, fetchPosts } from "../API/api";
 
 const FetchRQ = () => {
 const [pageNum ,setPageNum] = useState(0)
@@ -13,7 +13,7 @@ const [pageNum ,setPageNum] = useState(0)
     // refetchInterval:1000
   });
 const deleteMutation = useMutation({
-  mutationFn : () => deleteHandler(id)
+  mutationFn : (id) => deleteHandler(id)
 })
   const prevHandler = () => {
     setPageNum(prev => prev - 3)

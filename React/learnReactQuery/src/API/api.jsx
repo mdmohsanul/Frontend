@@ -13,3 +13,12 @@ export const fetchPosts = async(pageNum) => {
   }
   
 };
+
+export const deleteHandler = async(id) => {
+  try{
+    const res =  await api.delete(`/posts/${id}`)
+    return res.status === 200 ? res.data : []
+  }catch(error){
+    console.log(error)
+  }
+}
