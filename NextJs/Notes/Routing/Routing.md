@@ -28,6 +28,7 @@ When these conventions are followed, the file automatically becomes available as
 - It matches any URL with docs in the path
 - http://localhost:3000/docs/feature1/concept1 -- it will map to the slug page file
 - it captures all URL segments and handles them in the single file this is perfect for documentation sites where you want different URL segments for organization and SEO but keep the same basic layout.
+- It means one layout can handle n number of pages.
 
 - But when we try to access ( http://localhost:3000/docs) docs we get 404 error
 - to resolve this wrap the [...slug] folder with one more square brackets [[...slug]]

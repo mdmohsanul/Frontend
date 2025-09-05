@@ -1,11 +1,18 @@
-// Runs a function once after a specified delay (in milliseconds).
+// Settimeout is a browser API that schedule a function to run once after a specified delay (in milliseconds).
 
-// syntax = setTimeout(callback,delay,...args)
-// 1000 = 1 second
 
-setTimeout(() => {
-  console.log("runs after 2 seconds");
-}, 2000);
+/* 
+syntax = setTimeout(callback,delay,...args)
+callback - a function to be executed after a delay
+delay - time in milliseconds
+args - optional arguments that is passed to the callback
+
+*/
+function greet(name){
+  console.log(`Hello ${name}`)
+}
+
+setTimeout(greet, 2000,"Hoda");
 
 // if we want to clear the setTimeout
 

@@ -3,7 +3,7 @@
 - The metadata API in Next.js is a powerful feature that lets us define metadata for each page.
 - Metadata ensures out content looks great when it's shared or indexed by search engines.
 
-# Two ways ot handler metadata in layout.tsx or page.tsx files:
+# Two ways to handler metadata in layout.tsx or page.tsx files:
 
 1. export a static metadata object
 2. export a dynamic generateMetadata function
@@ -22,7 +22,7 @@
 - used in productDetails page if we want to change the title with each product.
 - example in productDetails page
 
-## *** We can't use metadata object and generate metadata in same route segment
+## *** We can't use metadata object and generate metadata in same route segment.
 
 ## *** Metadata will not work on the pages which is marked as 'use client' .  If you want to use then separate the UI logic (explained in counter folder)
 
@@ -38,6 +38,6 @@
     template: "%s | code mania
     absolute:
 }
-- default -- If in other pages the metadata is not provided then it will add this default title
+- default -- If in other child pages the metadata is not provided then it will add this default title.
 - template -- It is useful when we want default title and some dynamic page title
-- absolute -- It will override 
+- absolute -- It will override the title set by the parent route/page. So, It is written in child route/page

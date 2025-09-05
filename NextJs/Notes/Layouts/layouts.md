@@ -11,10 +11,11 @@ Footer
 
 # How to create layout
 
-- Every next.js file have a root layout inside the app folder.
-
 - Default export a React component from a layout.js and layout.tsx file
 - That component takes a children prop, which Next.js will populate with your page content.
+
+* if a folder having layout.tsx then the page.tsx becomes children which layout.jsx renders.
+* Every next.js must file have a root layout inside the app folder.
 
 # Nested Layouts
 
@@ -29,6 +30,9 @@ Footer
 Organize our project structure without affecting URLs
 Apply layouts selectively to specific parts of our app
 
-- Create two folders (auth) and (customers)
-- create layout in both auth and customers folder
+- Create two folders (auth) and (customers).
+  - In the auth folder all login, register and signup page are there without header and footer.
+- create layout in both auth and customers folder.
+
+- delete the root layout.
 - move the page.tsx of app folder to customer folder

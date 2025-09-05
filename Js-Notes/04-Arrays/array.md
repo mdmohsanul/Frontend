@@ -12,6 +12,7 @@ console.log(arr);
 # How do you create an array in JavaScript?
 
 - let arr = [1,2,3]
+- let arr2 = new Array(2,4,6)
 
 # What are the different ways to iterate over an array?
 

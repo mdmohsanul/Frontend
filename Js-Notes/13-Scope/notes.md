@@ -1,5 +1,7 @@
 # How many types of scopes are there in Js
 
+Scope defines where variables, functions and objects are accessible in your code. It controls the visibility and lifetime of variables.
+
 - Block Scope -> Anything we write inside paranthesis is declared as block scope
   if (1) {
   //block scope

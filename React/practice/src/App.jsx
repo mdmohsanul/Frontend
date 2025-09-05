@@ -1,83 +1,33 @@
-import { useEffect, useState, useCallback } from "react";
-import "./index.css";
-import "./App.css";
 
-export default function App() {
-  const [fetchedData, setFetchedData] = useState([]);
-  const [page, setPage] = useState(1);
-  const [loading, setLoading] = useState(false);
-  const [err, setErr] = useState(null);
-  const itemsPerPage = 6;
+import Todo from './Todo'
+import { TodoProvider } from './TodoContext'
+import Modal from './Modal'
+import Accordian from './Accordian'
+import PlainSearchBars from './SearchBars/PlainSearchBars'
 
-  const fetchData = async () => {
-    setLoading(true);
-    try {
-      const res = await fetch("https://jsonplaceholder.typicode.com/photos");
-      const data = await res.json();
-      setFetchedData(data);
-    } catch (error) {
-      setErr(error.message);
-    } finally {
-      setLoading(false);
-    }
-  };
 
-  useEffect(() => {
-    fetchData();
-  }, []);
-
-  // Debounce function
-  function debounce(func, delay) {
-    let timeoutId;
-    return function (...args) {
-      if (timeoutId) {
-        clearTimeout(timeoutId);
-      }
-      timeoutId = setTimeout(() => {
-        func(...args);
-      }, delay);
-    };
-  }
-
-  const handleScroll = useCallback(() => {
-    if (
-      window.innerHeight + window.scrollY >=
-      document.body.offsetHeight - 300
-    ) {
-      setPage((prev) => prev + 1);
-    }
-  }, []);
-
-  useEffect(() => {
-    const debouncedScroll = debounce(handleScroll, 300);
-    window.addEventListener("scroll", debouncedScroll);
-    return () => {
-      window.removeEventListener("scroll", debouncedScroll);
-    };
-  }, [handleScroll]);
-
-  const list = fetchedData.slice(0, page * itemsPerPage);
-
+const App = () => {
+  // const [openModal,setOpenModal] = useState(false)
   return (
-    <div className="App">
-      {loading && <p>Loading...</p>}
-      {err && <p>Error: {err}</p>}
-      <div style={{ display: "flex", flexWrap: "wrap", gap: "10px" }}>
-        {list.map((item) => (
-          <div
-            key={item.id}
-            style={{
-              height: "300px",
-              width: "300px",
-              border: "1px solid black",
-              padding: "10px",
-            }}
-          >
-            <img src={item.thumbnailUrl} alt={item.title} height="150" />
-            <p>{item.title}</p>
-          </div>
-        ))}
-      </div>
-    </div>
-  );
+    <PlainSearchBars/>
+    // <Accordian/>
+    // <TodoProvider>
+    // <Todo/>
+    // </TodoProvider>
+//     <>
+
+//     <button onClick={() => setOpenModal(true)}>Open Modal</button>
+//       {openModal && (
+          
+//           <div className="overlay" onClick={() => setOpenModal(false)}>
+// <div onClick={(e) => e.stopPropagation()}>
+//  <Modal setOpenModal={setOpenModal}/>
+// </div>
+           
+//           </div>
+//         )}
+//     </>
+  )
 }
+{/* <div className="fixed inset-0 z-50 flex items-center justify-center backdrop-blur-xs bg-black/50 min-h-screen"> */}
+export default App

@@ -22,8 +22,9 @@
 
 - for...in loop
 - Object.keys()
-- Object.entries()
 - Object.values
+- Object.entries() -> turns object into [key, value] pairs.
+- Object.fromEntries() -> turns [key, value] pairs back into object
 
 # How to check property exists or not?
 

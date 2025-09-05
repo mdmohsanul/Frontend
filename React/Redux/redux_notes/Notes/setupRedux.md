@@ -31,5 +31,5 @@ state - all the values inside initialState
 action - if we want some value
 
 4 - the slice and reducers have to export individually
-eg: export default todoSlice
+eg: export default todoSlice.reducer
 export const {addTodo,removeTodo} = todoSlice.actions

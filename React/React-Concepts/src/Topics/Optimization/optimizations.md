@@ -49,3 +49,9 @@
 # 13. Enable HTTP/2 or HTTP/3
 
 – Upgrade to modern web protocols to allow multiplexing, faster data transfers, and reduced latency.
+
+
+const Help = lazy(() => import("./))
+
+path:"/help"
+element:<Suspense fallback={<h1>Loading</h1>}><Help/></Suspense>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>localStorage vs sessionStorage Demo</title>
+</head>
+<body>
+  <h2>LocalStorage vs SessionStorage</h2>
+
+  
+
+  <button onclick="saveUser()">Save User (localStorage)</button>
+  <button onclick="showUser()">Show User</button>
+  <br><br>
+
+  <button onclick="saveProduct()">Save Product (sessionStorage)</button>
+  <button onclick="showProduct()">Show Product</button>
+
+  <script>
+    const user = { name: "John", age: 26, city: "LA" };
+    const product = { name: "Laptop", price: 65000 };
+
+    // Save in localStorage
+    function saveUser() {
+      localStorage.setItem("user", JSON.stringify(user));
+      console.log("✅ User saved in localStorage.");
+    }
+
+    // Show from localStorage
+    function showUser() {
+      const data = JSON.parse(localStorage.getItem("user"));
+      console.log("User from localStorage:", data);
+    }
+
+    // Save in sessionStorage
+    function saveProduct() {
+      sessionStorage.setItem("product", JSON.stringify(product));
+      console.log("✅ Product saved in sessionStorage.");
+    }
+
+    // Show from sessionStorage
+    function showProduct() {
+      const data = JSON.parse(sessionStorage.getItem("product"));
+      console.log("Product from sessionStorage:", data);
+    }
+
+    // --- AUTO DISPLAY ON PAGE LOAD ---
+    window.addEventListener("load", () => {
+      console.log("Page reloaded ✅");
+      console.log("localStorage user:", JSON.parse(localStorage.getItem("user")));
+      console.log("sessionStorage product:", JSON.parse(sessionStorage.getItem("product")));
+    });
+  </script>
+</body>
+</html>
