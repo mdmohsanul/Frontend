@@ -1,4 +1,6 @@
 1. What are React Hooks, and why were they introduced?
+
+- Hooks are the functions that were introduced in React 16.8 that lets developers
 2. What is useState, and how does it work?
 3. What is useEffect, and what are its common use cases?
 4. What is the difference between useEffect and lifecycle methods in class components?

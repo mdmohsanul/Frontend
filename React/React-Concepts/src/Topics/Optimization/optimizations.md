@@ -71,3 +71,8 @@ Use Chrome DevTools to analyze rendering, memory, and network bottlenecks.
 Continuously monitor Core Web Vitals in production using tools like Sentry or New Relic.
 
 # Optimistic UI
+
+
+# Shimmer UI 
+
+# Config driven UI
