@@ -1,3 +1,10 @@
+# What is HTML?
+- HTML is a standard way to create and structure the webpage. It is a markup language, it means it uses tags to descibe the structure and content of the webpage. and it is platform independent means it will run on all browsers.
+
+# What is markdown?
+Markdown is lightweight markup language used to format text using plain text syntax.
+It is mainly used to create documentation or Readme files for platform like github and reddit.
+ 
 # What is <!DOCTYPE html>
 
 - It Declares the document type. Tells the browser that this is an HTML5 type document.
@@ -47,10 +54,6 @@ Semantic Tags are
 - Used mostly for styling/layout.
 
 
-
-
-
-
 ## Difference between element, tag and attribute?
 Tag	- Markup that defines an element	<p> or </p>
 Element - A complete HTML unit (tag + content)	<p>Hello</p>
@@ -65,3 +68,20 @@ Attribute - Adds extra info to a tag/element	alt="text" in <img>
 - Inline elements takes as much width as necessary
 - can contain only inline elements
 - <span> <label> <a> <input> <img> 
+
+# Features comeup with HTML5?
+
+- Semantic elements -> header,nav,main,section,aside,footer
+- Multimedia support -> without using third-party libraries like flash
+   (audio and video)
+   <video controls>
+  <source src="movie.mp4" type="video/mp4">
+   </video>
+- Input types  -> email, url, tel, number, date, range, color, etc.
+  attributes -> placeholder, required, autofocus, pattern, min, max, step
+
+- APIs and Browser Features
+   Canvas API: Draw graphics using JavaScript (<canvas>)
+   SVG: Scalable vector graphics support
+   Geolocation API: Get user's location
+   .Web Storage API: Store data locally (localStorage, sessionStorage)

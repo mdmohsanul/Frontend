@@ -42,3 +42,24 @@
 - Users can interact with each section separately, applying filters, sorting data, or navigating through pages without affecting other parts.
 
 
+# Unmatched Route
+
+Navigating from the UI:
+When navigating through the UI(like clicking links), Next.js keeps showing whatever  was in the unmatched slots before.
+
+- But in Page Reload Next.js looks for a default.tsx in each unmatched slot.
+
+- This is critical as it serves as a fallback to render content when the framework cannot retrieve a slots active state from the current URL.
+
+- Without the file, you'll get a 404 error
+
+### All examples in complex-dashboard folder
+
+# Conditional Routes
+
+- Imagine you want to show different based on whether a user is logged in or not.
+
+- You might want to display a dashboard for authenticated users but show a login page for those who aren't.
+
+- Conditional routes allow us to achieve this while maintaining completely separate code on the same URL.
+

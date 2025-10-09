@@ -1,12 +1,12 @@
 // intersection
 // function
 
-type Person = {
+type Person1 = {
   name: string;
   age: number;
 };
 
-type Student = Person & {
+type Student = Person1 & {
   studentId: string;
 };
 

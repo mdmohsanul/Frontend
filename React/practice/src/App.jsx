@@ -1,15 +1,19 @@
 
-import Todo from './Todo'
-import { TodoProvider } from './TodoContext'
-import Modal from './Modal'
-import Accordian from './Accordian'
+import Todo from './Todo/Todo'
+import { TodoProvider } from './Todo/TodoContext'
+import Modal from './Modals/Modal'
+import Accordian from './Accordian/Accordian'
 import PlainSearchBars from './SearchBars/PlainSearchBars'
+import Practice from './practice'
+import CinemaSeatBooking from './CinemaSeatBooking/CinemaSeatBooking'
 
 
 const App = () => {
   // const [openModal,setOpenModal] = useState(false)
   return (
-    <PlainSearchBars/>
+    <CinemaSeatBooking/>
+    // <Practice />
+    // <PlainSearchBars/>
     // <Accordian/>
     // <TodoProvider>
     // <Todo/>

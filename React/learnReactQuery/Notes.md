@@ -7,7 +7,7 @@
 - Data Fetching Made Easy: With a simple useQuery hook, fetching data becomes super easy.
 - Builtin Loading and Error states: No need to write custom code for handling loading, error  or success states.
 - Automatic Caching: React query automatically caches your data.
-- background refetching: If your data gets stale out of date, Tanstack query can refetch it in the background. eg: like in any trading app the price of the stocks changes in every miliseconds so with react query it fetches automatically.
+- background refetching: If your data gets stale(basi) out of date, Tanstack query can refetch it in the background. eg: like in any trading app the price of the stocks changes in every miliseconds so with react query it fetches automatically.
 - Pagination and Infinite scrolling: Handling pagination or infinite scrolling? React query solves those complex use cases
 
 ## TanStack Query makes working with server-side data in react a breeze. It's fast, eficient, and reduces the amount of boilerplate code you need to write. If you're working on any app that relies on API data, this tool is an absolute game-changer.

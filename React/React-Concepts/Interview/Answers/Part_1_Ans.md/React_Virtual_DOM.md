@@ -39,6 +39,8 @@ React is an open source JavaScript library used for building user interfaces esp
 
 - Props Change: A component re-renders when it receives new props from its parent.
 
+- Whenever state or props change react re-render the component and all the functions inside it will be recreated.
+
 - Parent Component Re-renders (May Cause Child to Re-render): Even if props don’t change, a child may re-render if its parent re-renders.
 wrap your children component with React.memo() to prevent unnecessary re-renders.
 

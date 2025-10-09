@@ -1,3 +1,5 @@
+@import "tailwindcss";
+
 /* General Accordion Styles */
 .accordion {
     width: 100%;

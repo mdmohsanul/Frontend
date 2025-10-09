@@ -1,90 +1,88 @@
-const grandParent = document.getElementById("grandparent");
-const parent = document.getElementById("parent");
-const child = document.getElementById("handleClick");
-
-// // Example of event bubbling
-// // Handler 1
-// function grandParenthandler() {
-//   console.log("grandParenthandler clicked");
-// }
-
-// grandParent.addEventListener("click", grandParenthandler,false);
-
-// // Handler 2
-// function parenthandler() {
-//   console.log("parenthandler clicked");
-// }
-// parent.addEventListener("click", parenthandler,false);
-
-// // Handler 3
-// function handleClick() {
-//   console.log("handleClick clicked");
-// }
-// child.addEventListener("click", handleClick,false);
+// there ways to handle events in JavaScript
 
 /* 
-So, In the above code if we click on the child which is button then first
-handleclick clicked
-parenthandler clicked
-grandParenthandler clicked
+
+Inline HTML Event Handlers (old way)
+<button onclick="alert('Button clicked!')">Click Me</button>
+
+DOM Property (Traditional way)
+<button id="btn">Click Me</button>
+
+<script>
+  const btn = document.getElementById("btn");
+  btn.onclick = function() {
+    alert("Button clicked!");
+  };
+</script>
+
+addEventListener (Modern way) ✅
+<button id="btn">Click Me</button>
+
+<script>
+  const btn = document.getElementById("btn");
+  btn.addEventListener("click", () => {
+    alert("Button clicked!");
+  });
+});
+
 */
 
-// Example of event capturing
+// When an event happens, the browser creates an event object with details:
+btn.addEventListener("click", function(event) {
+  console.log(event.type);      // "click"
+  console.log(event.target);    // <button>
+});
 
-// Handler 1
-// function grandParenthandler() {
-//   console.log("grandParenthandler clicked");
-// }
 
-// grandParent.addEventListener("click", grandParenthandler, true);
 
-// // Handler 2
-// function parenthandler() {
-//   console.log("parenthandler clicked");
-// }
-// parent.addEventListener("click", parenthandler, true);
+// addEventListener takes three parameters
+element.addEventListener(type, listener, options/useCapture);
 
-// // Handler 3
-// function handleClick() {
-//   console.log("handleClick clicked");
-// }
-// child.addEventListener("click", handleClick, true);
+element.addEventListener("click" , function(e){}, {
+  capture: true,      // use capturing
+  once: true,         // run only once
+  passive: true       // never call preventDefault()
+})
 
-/* 
-So, In the above code if we click on the child which is button then first
-grandParenthandler clicked
-parenthandler clicked
-handleclick clicked
+// removeEventListener()
+// The method removes an event listener that was previously added with addEventListener.
+// All three parameters (type, listener, and options/useCapture) must match exactly what was used in addEventListener.
 
-because we pass true as a third parameter so it comes from top to down
-*/
+const btn = document.getElementById("btn");
 
-// Example of mixed events
-// Handler 1
-function grandParenthandler() {
-  console.log("grandParenthandler clicked");
-}
-
-grandParent.addEventListener("click", grandParenthandler, true);
-
-// Handler 2
-function parenthandler() {
-  console.log("parenthandler clicked");
-}
-parent.addEventListener("click", parenthandler, false);
-
-// Handler 3
 function handleClick() {
-  console.log("handleClick clicked");
+  console.log("Button clicked!");
 }
-child.addEventListener("click", handleClick, true);
 
+// add listener
+btn.addEventListener("click", handleClick);
+
+// remove listener after 3 seconds
+setTimeout(() => {
+  btn.removeEventListener("click", handleClick);
+  console.log("Listener removed");
+}, 3000);
+
+// this won't work because anonymous function have different references in memory
+btn.addEventListener("click", function() {
+  console.log("Clicked!");
+});
+
+btn.removeEventListener("click", function() {
+  console.log("Clicked!");
+});
+
+// **** So Always use named function if you want to removeEventListener
 /* 
-So, In the above code if we click on the child which is button then first
-grandParenthandler clicked
-handleclick clicked
-parenthandler clicked
-
-So it call the events in this way because we click on the child button and in event propagation cycle first it comes down which
-is event trckling so it print like this 
+You cannot remove anonymous functions.
+Always keep a reference to the handler if you’ll remove it.
+The 3rd parameter must match (true/false or object).
 */
+
+
+// with options
+
+btn.addEventListener("click", handleClick, { capture: true });
+
+// must match the same options
+btn.removeEventListener("click", handleClick, { capture: true });

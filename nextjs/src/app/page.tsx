@@ -13,6 +13,8 @@ export default function Home() {
     <Link href={"/navigation"}>Navigation</Link>
     <Link href={"/register"}>Authentication</Link>
     <Link href={"/complexDashboard"}>Complex-Dashboard</Link>
+    <Link href={"/interceptingRoutes/f1"}>Intercepting Routes</Link>
+
 
 
    </nav>

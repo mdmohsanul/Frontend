@@ -1,3 +1,34 @@
+## What are events in Javascript?
+- Events are the action or occurence that happens in browser that browser can respond to.
+- Think events as signal that something has happened and JavaScript provide a way to listen these events and react to them.
+
+# Example of events
+
+1. User Interactions:
+click, dblclick → when a user clicks a button
+keydown, keyup → when a key is pressed or released
+input, change, focus, blur → when form input changes
+submit → when a form is submitted
+mouseover, mouseout → when the mouse enters/leaves an element
+
+2. Window/ Document Events:
+load – when page or resource finishes loading
+DOMContentLoaded – when initial HTML is loaded and parsed
+resize – when window is resized
+scroll – when page or element is scrolled
+unload / beforeunload
+
+3. Clipboard Events
+copy, cut, paste
+
+4. Touch / Pointer Events (for mobile/touch devices)
+touchstart, touchmove, touchend
+pointerdown, pointermove, pointerup
+
+5. Media Events
+play, pause, ended
+timeupdate, volumechange
+
 # Event bubbling and capturing are two ways of event propagation on the DOM tree.
 
 # Event propagation is the process by which an event moves through the DOM after being triggered. It occurs in three phases:
@@ -12,9 +43,9 @@
 
 # When any event occurs happens then in the first cycle event capturing happens then event bubbling happens and we can control by passing the third parameter.
 
-.addEventListener("click", () => {
+element.addEventListener("click", handler, true); // capturing phase
+element.addEventListener("click", handler, false); // bubbling phase (default)
 
-}, useCapture)
 
 - if useCapture is true then event capturing will happen means from top to bottom.
 - if usecapture is false or if we don't write any third argument then by default event bubbling will happen.

@@ -1,12 +1,15 @@
 
 import React from 'react'
 
-const ComplexDashboardLayout = ({children,users,revenue,notifications}:{children:React.ReactNode,
+const ComplexDashboardLayout = ({children,users,revenue,notifications,login}:{children:React.ReactNode,
     users:React.ReactNode;
     revenue:React.ReactNode;
-    notifications:React.ReactNode
+    notifications:React.ReactNode;
+    login:React.ReactNode
 }) => {
-  return (
+
+  const isLoggedIn = true
+  return isLoggedIn ? (
     <>
     <div>
     {children}
@@ -25,7 +28,7 @@ const ComplexDashboardLayout = ({children,users,revenue,notifications}:{children
     </div>
    
     </>
-  )
+  ) : <>{login}</>
 }
 
 export default ComplexDashboardLayout

@@ -6,7 +6,7 @@
 
 # How to use it
 
-create loading.tsx inside any folder and it wraps the page.tsx content
+create loading.tsx inside any folder and it wraps the page.tsx content automatically.
 
 # Benefits of loading.tsx
 
