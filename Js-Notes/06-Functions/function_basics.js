@@ -89,3 +89,6 @@ console.log(addNumbers(3, 5)); // NaN
 
 const addThreeNumbers = (a, b, c = 6) => a + b + c;
 console.log(addThreeNumbers(3, 5)); //14
+
+
+

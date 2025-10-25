@@ -31,7 +31,7 @@ function Parent() {
 
   //State updates in React are asynchronous. If the new state depends on the previous state, use a callback function:
   //setCount((count) => count + 1)
-
+const {data,isLoading} = useFetch(url)
   return (
     <div>
       <p>Count: {count}</p>

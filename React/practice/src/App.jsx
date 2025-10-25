@@ -11,9 +11,9 @@ import CinemaSeatBooking from './CinemaSeatBooking/CinemaSeatBooking'
 const App = () => {
   // const [openModal,setOpenModal] = useState(false)
   return (
-    <CinemaSeatBooking/>
+    // <CinemaSeatBooking/>
     // <Practice />
-    // <PlainSearchBars/>
+    <PlainSearchBars/>
     // <Accordian/>
     // <TodoProvider>
     // <Todo/>
