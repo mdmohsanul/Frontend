@@ -1,5 +1,5 @@
 /* 
-immutable -> something that can be changed.
+immutable -> something that cannot be changed.
 
 In JavaScript primitives types are immutable means we cannot change it but we can reassign it.
 

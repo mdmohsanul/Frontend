@@ -1,4 +1,6 @@
-# Web Accessibility is the crucial part of web development that ensures any website or web application can be used by people with disabilities
+# Accessibility (A11y) -> there are 11 letters between a and y
+
+# Web Accessibility is the crucial part of web development that ensures any website or web application can be used by everyone including people with disabilities
 
 -There are some basic accessibilty principles 
 
@@ -10,6 +12,13 @@
 # Keyboard navigation
 - Make sure that all the interactive elements can be accessed by keyboard.
 - Test your website's tab order and make sure it follows a logical flow.
+ <button tabIndex='0'>Click me</button>
+ <input type="text" tabIndex='-1'>
+- Use tabIndex=0 for elements that should be focusable
+- Use tabIndex=-1 for elements that should be focusable only through scripts
+
+
+
 
 # Alt Text: 
 - Always include descriptive and meaningful alternative text for images (<img>). This is essential for users who are blind or have low vision.
