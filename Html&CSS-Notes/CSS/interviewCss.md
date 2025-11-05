@@ -86,3 +86,42 @@ p{
 # Difference between visibility:hidded and display:none?
 visibility: hidden	Hides the element but keeps its layout (still takes up space)	
 display: none	Removes the element completely from the document flow
+
+# How do you implement responsiveness?
+
+Best practices to implement responsiveness
+
+1. Using media queries 
+ @ media (max-width: 780px){
+    .container{
+        padding:10px
+    }
+ }
+
+2. Using fluid/relative units
+
+- % -> relative to its parent size
+- em -> relative to its parent font size
+- rem -> relative to html font size
+- vh/vw -> relative to viewport size
+Dont use px
+
+3. Using flex and grid
+- flexbox for one-dimensional layouts
+- grid for two-dimensional layouts
+
+4. Responsive images
+- using max-width and srcset for serving different image sizes based on device resolution.
+
+5. Mobile First approach
+I prefer a mobile-first approach because most users access sites on mobile devices. It forces me to build a clean, optimized base layout and then progressively enhance for larger screens. This reduces CSS overrides, improves performance, and results in a more consistent and user-friendly experience across all devices.
+
+6. Flexible typography
+  use em/rem for texts
+
+I implement responsiveness using a mobile-first approach. I use media queries to adjust layouts at breakpoints and rely on fluid/relative units like %, rem, and vw/vh rather than fixed pixels. For layout structuring, I use Flexbox and CSS Grid so elements can adapt naturally. I ensure images are responsive using max-width and srcset, and I use rem/em for scalable typography. This combination ensures the UI is consistent, readable, and adapts smoothly across different devices.
+
+
+# How to test responsiveness?
+
+I usually test responsiveness using Chrome DevTools for quick breakpoint adjustments, Responsively App to view multiple device layouts simultaneously, and BrowserStack/LambdaTest to verify behavior on real devices and different browser environments.

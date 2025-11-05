@@ -17,3 +17,4 @@ Split large libraries (charts, editors) into async chunks.
 Preload critical chunks when you know they’ll be needed soon (e.g., link rel="preload").
 Monitor and analyze bundles with tools like Webpack Bundle Analyzer.
 
+React Suspense lets you pause rendering of a component until some asynchronous operation like lazy loading or data fetching is done. During that time, React shows a fallback UI (like a loader). It simplifies handling async rendering and improves user experience.
