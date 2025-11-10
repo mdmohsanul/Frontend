@@ -1,6 +1,9 @@
 𝗕𝗮𝘀𝗶𝗰 𝗣𝗼𝗹𝘆𝗳𝗶𝗹𝗹 𝗤𝘂𝗲𝘀𝘁𝗶𝗼𝗻𝘀:
 
 1.  What is a polyfill, and why do we need it in JavaScript?
+- Polyfills are our own implementation for in-built methods of Javascript
+
+
 2.  How do polyfills differ from JavaScript shims?
 3.  What is feature detection, and how does it relate to polyfills?
 4.  How do you check if a JavaScript feature is natively supported before applying a polyfill?

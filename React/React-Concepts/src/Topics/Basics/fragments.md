@@ -10,3 +10,11 @@
 - To return multiple element from react component, you'll need to wrap the element in a root element.
 
 # The main difference between div and fragment is: Fragment clears out the extra divs form the DOM tree while div adds a div to the DOM tree.
+
+<>
+
+</>
+
+<React.Fragment>
+
+</React.Fragment>

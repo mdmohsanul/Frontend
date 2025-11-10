@@ -48,3 +48,5 @@ npm outdated
   "last 2 versions",
   "not dead"
 ]
+
+# difference between npm and yarn
