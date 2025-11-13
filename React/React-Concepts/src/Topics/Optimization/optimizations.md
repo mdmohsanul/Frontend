@@ -55,6 +55,8 @@ I would use lazy loading so images outside the viewport don’t block initial pa
 
 - Don’t overload client state with server data. Use libraries like React Query or RTK Query to handle caching, refetching, and background updates efficiently.
 
+# Virtualize long list with react-window or react-virtualized
+
 # 𝗢𝗽𝘁𝗶𝗺𝗶𝘇𝗲 𝗔𝗣𝗜 𝗖𝗮𝗹𝗹𝘀
 
 – Use pagination, infinite scrolling, and GraphQL batching to fetch only necessary data, reducing load times.
@@ -70,8 +72,9 @@ Use React Profiler to detect slow components.
 Use Chrome DevTools to analyze rendering, memory, and network bottlenecks.
 Continuously monitor Core Web Vitals in production using tools like Sentry or New Relic.
 
-# Optimistic UI
+# By caching techniques (Browser caching, server-side caching)
 
+# Use Web Worker for heavy tasks.
 
 # Shimmer UI 
 

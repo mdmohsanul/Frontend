@@ -23,10 +23,11 @@ When you optimize rendering performance, you will sometimes need to cache the fu
 
 To cache a function between re-renders of your component, wrap its definition into the useCallback Hook
 
-useCallback is used for memoizing callbacks to prevent unnecessary re-renders of child components.
-It returns a memoized callback function that only changes if one of the dependencies has changed.
-It is useful when passing callbacks to child components that rely on reference equality.
-It will return a memoized version of the function that only changes if one of the dependencies has changed.
+- useCallback hook in React optimizes component performance by avoiding unnecessary re-renders.
+- It does this by memoizing callback functions which are  only recreated when their dependencies change.
+- This is especially useful for fucntions passes as a props to child components, as it prevents them from re-rendering unless
+absolute necessary.
+.
 
 eg: Give example of password generator application
 */
