@@ -31,3 +31,14 @@ Repaint is less expensive because browsers redraws pixels without recalculating 
 | Examples     | width, height, position          | color, background, shadows      |
 | Cost         | **High** (may affect whole page) | **Medium** (only redraw needed) |
 | Performance  | Worse                            | Better                          |
+
+
+# Core Web Vitals
+
+- It is a set of performance metrices google measure from real-world experience of your website
+
+- Largest Content Paintful (Loading Performance)
+
+- Cumulative Layout Shift (Visual Activity)
+ 
+- Interaction to next paint (Interactivity)
