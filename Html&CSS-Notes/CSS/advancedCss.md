@@ -22,3 +22,19 @@
 
 # How TailwindCSS converted into normal CSS
 Tailwind uses PostCSS to scan my code, extract used classes, and generate the final optimized CSS. The browser only sees normal CSS, Tailwind is just the build process
+
+# Critical CSS
+
+- Critical CSS is the minimum CSS required to render the first visible part of the page. So that initial render will be fast and rest of the CSS will be load later.
+
+* Because the browser stops rendering until the CSS is downloaded and parsed
+- It improves the:
+ - LCP (Largest Contentful Paint)
+ - FCP (First Contentful Paint)
+ - Better User Experience
+ - Page Load Time
+ - SEO
+
+- Next.js automatically extracts critical CSS during SSR and inline it inside head tag browser doesn't need to fetch an external stylesheet and the rest load lazily.
+
+- In React we have to install some plugins like critters, penthouse.
