@@ -8,6 +8,8 @@ const Event = () => {
  console.log(e.target)
     } 
 
+
+    // use when you want custom arguments with optimization
     const handler = (name) => (event) => {
     console.log("Event target:", event.target);
     alert(`Hello ${name}`);
@@ -15,6 +17,9 @@ const Event = () => {
   return (
     <>
 
+    {/* Ways to write onclick handler */}
+
+   {/* Best / Most Optimized (no new function created) , resuse the handler */}
     <button onClick={handleButtonClick}>Click Me</button>
 
     {/* you have to pass the event object */}
@@ -22,9 +27,7 @@ const Event = () => {
 
     {/* If you want e object and some custom arguments then */}
     
- <button onClick={handler("Hoda")}>
-      Click
-    </button>
+ <button onClick={handler("Hoda")}>Click</button>
     </>
 
 
