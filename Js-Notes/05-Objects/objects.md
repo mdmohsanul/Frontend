@@ -29,9 +29,20 @@
 # How to check property exists or not?
 
 - console.log("email" in user); // false
-- console.log(user.hasOwnProperty("age")); // true
+- console.log(user.hasOwnProperty("age")); // true   ``` Preferable ```
 - console.log(Object.hasOwn(user, "name")); // true (ES2022+)
 
 # Difference between shallow copy and deep copy?
 
 - A shallow copy only copies the top-level properties, while a deep copy creates a completely independent copy of an object, including nested objects.
+
+# Object can accept only string and symbol as a key or properties
+const a = {}
+const b = {key:"b"}
+const c = {key:"c"}
+
+a[b] = 'first'  // a['object':'object']
+a[c] = 'second' // a['object':'object']
+
+console.log(a[b]) //second
+

@@ -5,6 +5,10 @@
 - Prototype is a special object that is associated to every function, method, object and arrays
 - It allows inheritance, meaning that objects can share properties and methods through their prototype chain.
 
+- Prototypal inheritance allows objects in JavaScript to inherit properties and methods from a prototype object.
+
+- Whenever we access a property
+
 # Here's what happens behind the scenes when the new keyword is used:
 
 - A new object is created: The new keyword initiates the creation of a new JavaScript object.
