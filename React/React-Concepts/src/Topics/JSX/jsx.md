@@ -8,7 +8,7 @@
 You can embed JS expressions inside {}.
 
 - Must have one parent element:
-JSX expressions must return a single root element.
+JSX expressions must return a single root element. because React.createElement expects one root element
 
 - Attributes use camelCase:
 class → className

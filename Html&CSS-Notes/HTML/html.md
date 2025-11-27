@@ -84,4 +84,14 @@ Attribute - Adds extra info to a tag/element	alt="text" in <img>
    Canvas API: Draw graphics using JavaScript (<canvas>)
    SVG: Scalable vector graphics support
    Geolocation API: Get user's location
-   .Web Storage API: Store data locally (localStorage, sessionStorage)
+   Web Storage API: Store data locally (localStorage, sessionStorage)
+
+
+# What are void tags
+
+* void tags === self closing tags
+
+- They are the element that cannot have any content or closing tags. They don't wrap anything.
+- void tags can contain attributes.
+- Some self closing tags are - img, br, hr, input, meta, link
+<img> ✔️, <img></img> ❌

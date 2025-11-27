@@ -1,6 +1,11 @@
 1. What are React Hooks, and why were they introduced?
 
-- Hooks are the javascript utility functions that were introduced in React 16.8 that allow functional components to manage state and side effects.
+- Hooks are the javascript utility functions that were introduced in React 16.8 that allow functional components to - - - manage state 
+- run side effects.
+- access context
+- reference DOM nodes
+- optimize performance
+- integrate custom logic means custom hooks
 
 Hook were introduced for functional components:
 For managing the state and side effects in our component.
@@ -17,16 +22,21 @@ Hooks Rules:
 - Hooks can only be called at the top level of the component.
 - Hooks cannot be conditional.
 
+useState – local component state
+useEffect – side effects (API calls, subscriptions, timers)
+useContext – access global context values
+useRef – reference DOM nodes or store mutable values
+useReducer – complex state (Redux-like)
+useCallback – memoize functions (avoid re-renders)
+useMemo – memoize expensive calculations
+useLayoutEffect – like useEffect but runs earlier (DOM sync),Used when measuring DOM.
+useId – stable IDs for accessibility/forms
+useTransition – concurrent UI updates
+useDeferredValue – lag UI optimization
+useImperativeHandle – customize ref behavior
+useSyncExternalStore – for state libraries
+useOptimistic (React 18+) – optimistic UI
 
-2. What is useState, and how does it work?
-3. What is useEffect, and what are its common use cases?
-4. What is the difference between useEffect and lifecycle methods in class components?
-5. What is useRef, and how does it help manage DOM elements?
-6. What is useMemo, and how does it optimize performance?
-7. What is useCallback, and how does it prevent unnecessary re-renders?
-8. What is useContext, and how does it simplify prop drilling? 
-9. What is useReducer, and when should you use it instead of useState?
-10. What is the difference between useMemo and useCallback?
 11. What are custom hooks, and how can they be useful?
 
 - Custom hooks are our own resuable functions which uses more than one in-built react hooks to share logic between components.
