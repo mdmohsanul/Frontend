@@ -52,3 +52,16 @@ const users = [
 // console.log(users[3].name); throws error
 
 console.log(users[3]?.name); // undefined
+
+
+// ------------- optional chaining with array ----------
+
+const firstItem = user?.friends?.[0];
+
+
+/* 
+----------------- Important points ---------------------
+- optional chaining only stops on null and undefined (0,false,"",NaN is valid value)
+
+
+*/
