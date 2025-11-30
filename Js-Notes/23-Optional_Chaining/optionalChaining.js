@@ -63,5 +63,9 @@ const firstItem = user?.friends?.[0];
 ----------------- Important points ---------------------
 - optional chaining only stops on null and undefined (0,false,"",NaN is valid value)
 
+Optional chaining (?.) is used to safely access nested object properties.
+If a property in the chain doesn't exist, JavaScript won’t throw an error — instead, 
+it simply returns undefined. This makes your code shorter, safer, 
+and easier to read when dealing with deep or uncertain object structures.
 
 */
