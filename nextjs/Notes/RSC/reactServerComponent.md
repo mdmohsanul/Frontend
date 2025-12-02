@@ -33,3 +33,12 @@ Suspense for SSR brought us closer to a seamless rendering experience.
 2. No hydration process
 3. Direct access to server-side resources like databases, file system etc
 4. Faster initial page load and First contentful paint- By generating HTML on the server user see the content immediately , no waiting to download and execute JS
+
+# How RSC internally works
+1. Server rendered component tree -> React compiles to RSC payload
+2. Browsers recieves HTML + RSC Payload(streaming chunks)
+3. Client hydrates the client component (only 'use client' components)
+4. Streaming via Suspense -> Content loads as chunks
+
+# RSC Payload, Partial Hydration, Progressive streaming, Zero bundle components
+

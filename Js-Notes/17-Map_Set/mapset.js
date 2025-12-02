@@ -22,3 +22,5 @@ for(let i=0; i<ar.length; i++){
     return newAr
 }
 console.log(getUniqueArr(arr))
+
+
